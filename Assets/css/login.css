@@ -1,0 +1,167 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Nunito sans, sans-serif;
+    background-image: url(../../ressources/chateau-kyoto.jpg);
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+   
+}
+
+.btn-accueil {
+    border-radius: 9999px;
+    background: crimson;
+    border: 1px solid #333;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    margin: 30px auto 0;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-accueil:hover {
+    background :#fff;
+    color:  crimson ;
+}
+.liste-nav {
+    background: #333;
+    background: linear-gradient(to bottom, #333, #626262);
+    border-bottom: 1px dotted #fff;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: fixed;
+    z-index: 200;
+}
+.item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.item-nav a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+}
+/* Form Container Styles */
+.form-container {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 100px;
+    text-align: center;
+
+}
+
+#titre {
+    color: #333;
+    font-size: 50px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+.btn-formulaire {
+    border-radius: 9999px;
+    background: crimson;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+}
+.btn-formulaire:hover {
+    background-color: #fff;
+    border: 2px solid  crimson;
+    color: crimson;
+}
+.btn-formulaire a{
+    color : #fff;
+}
+.btn-formulaire a:hover {
+    color: crimson;
+}
+.form-group1{
+    position: relative;
+    margin-top: 40px;
+    height: 60px;
+
+}
+#btn1{
+  position: absolute;  
+  left: 20px;
+}
+#btn2{
+  position: absolute;  
+  right: 20px;
+}
+footer {
+    color:#fff ;
+    border-top: 1px solid #333;
+    width: 100%;
+    text-align: center;
+    margin-top: 450px;
+    padding: 25px;
+    font-size: 25px;
+    background-color: #333;
+}

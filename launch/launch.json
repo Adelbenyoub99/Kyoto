@@ -1,0 +1,15 @@
+{
+    "id": "getConfigJson",
+    "type": "command",
+    "command": "launch-json-generator.generate",
+    // specify json scheme you want
+    "args": {
+      "stringValue": "string",
+      "optionalStringValue": "string|null",
+      "bool": "boolean",
+      "withOption": "'a'|'b'|'c'",
+      "nest": {
+          "array": ["boolean", "number"]
+      }
+    }
+ }

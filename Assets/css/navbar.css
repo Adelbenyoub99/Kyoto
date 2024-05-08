@@ -1,0 +1,151 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Nunito sans, sans-serif;
+}
+
+/*--------- Navigation ---------*/
+nav {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: #333;
+    border-bottom: 1px dotted #f1f1f1;
+    background: linear-gradient(to bottom, #333, #626262);
+    z-index: 100;
+}
+.btn-accueil {
+    border-radius: 9999px;
+    background: crimson;
+    border: 1px solid #333;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    margin: 30px auto 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-accueil:hover {
+    background: rgb(177,0,36);
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+    .accueil {
+        height: 650px;
+    }
+    .logo-kyoto {
+        margin: 120px auto 0;
+    }
+    .accueil h1 {
+        font-size: 60px;
+    }
+    .sous-titre {
+        font-size: 23px;
+    }
+    .btn-accueil {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: 15px auto 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .accueil {
+        height: 550px;
+    }
+    .logo-kyoto {
+        width: 150px;
+        margin: 110px auto 0;
+    }
+    .accueil h1 {
+        font-size: 35px;
+    }
+    .sous-titre {
+        font-size: 20px;
+    }
+    .btn-accueil {
+        width: 130px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+}
+
+.logo-menu {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 50px;
+    z-index: 250;
+    display: none;
+}
+
+.liste-nav {
+    background: #333;
+    background: linear-gradient(to bottom, #333, #626262);
+    border-bottom: 1px dotted #f1f1f1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: fixed;
+    z-index: 200;
+}
+.item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-nav a {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.item-nav a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+
+    .liste-nav {
+        display: none;
+        flex-direction: column;
+        height: auto;
+    }
+    .liste-nav.active {
+        display: block;
+    }
+    .item-nav {
+        height: 70px;
+    }
+    .item-nav:nth-child(1){
+        margin-top: 70px;
+    }
+
+}
+
+
